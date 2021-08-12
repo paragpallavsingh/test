@@ -1,0 +1,23 @@
+On github
+
+1. make a new repository
+2. give a repository name
+3. write a short description
+4. select the public option
+5. click create repository
+6. copy the repository address
+
+in the machine/system
+
+1. make a folder
+2. add any file to that folder
+3. open the same directory into cmd
+4. Run the following commands:
+
+git init
+git status
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin _(github repository address)
+git push -u origin main

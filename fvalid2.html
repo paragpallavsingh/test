@@ -1,0 +1,26 @@
+<html>    <head>   <title>JavaScript Example</title>
+<script language="javascript">
+function validate()   
+{
+  var x=document.stureg.sname.value;
+  var y=document.stureg.cno.value;
+  var z=document.stureg.email.value;
+  if(x=="" || y=="" ||z=="")    
+  {
+   alert("all fields are mandatory");
+   return false; 
+   }
+resname=/^[a-zA-Z]*$/  
+if(!resname.test(x))   
+{
+   alert("invalid sname");
+   return false;    }
+return true;    
+}     </script>    </head>  
+<body>
+<form name="stureg" method="POST" action="stureg.jsp" onSubmit="return validate()">
+  sname:<input type="text" name="sname"><br>
+Cotact No:<input type="text" name="cno"><br>
+Email Id:<input type="text" name="email"><br>
+<input type="submit" name="submit" value="register">
+</form>    </body>    </html>
